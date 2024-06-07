@@ -4,8 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-body {
-    background-color: darkgray;   
+body {  
+    background-color: darkgray;
 }
 
 * {
@@ -35,8 +35,9 @@ header p {
 }
 
 main {
-    font-family: Sriracha;
+
     background-color: white;
+    font-family: Sriracha;
     padding: 20px;
     display: block;
 }
@@ -53,6 +54,4 @@ section {
     background-image: url('imagens/background001.jpg');
 }
 
-.normal {
-    background-image: url('imagens/background001.jpg');
-}
+
