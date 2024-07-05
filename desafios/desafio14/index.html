@@ -18,14 +18,22 @@
             color: white;
         }
 
-        .t {
+        .m {
             background-color: dimgray;
             color: white;
+            text-align: left;
+        }
+
+        .num {
+            background-color: dimgray;
+            color: white;
+            text-align: center;
         }
 
         th, td {
             padding: 10px;
             border: 1px solid black;
+            text-align: center;
         }
     </style>
 </head>
@@ -33,14 +41,19 @@
     <table>
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th>Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Notas 1</th>
+                <th scope="col">Notas 2</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>0,0</td>
                 <td>0,0</td>
@@ -63,12 +76,25 @@
                 <td>0,0</td>
                 <td>0,0</td>
             <tr>
-                <th class="t">Média de exatas</th>
+                <th class="m" colspan="4" scope="row">Média de exatas</th>
+                <td class="num">0,0</td>
             </tr>
             <tr>
-                <th>Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
                 <td>Geografia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <th class="m" colspan="4" scope="row">Média de Humanas</th>
+                <td class="num">0,0</td>
             </tr>
         </tbody>
     </table>
